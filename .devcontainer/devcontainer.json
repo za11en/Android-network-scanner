@@ -1,0 +1,19 @@
+{
+      "name": "Android",
+        "image": "mcr.microsoft.com/devcontainers/java:0-17",
+
+          "features": {
+              "ghcr.io/devcontainers/features/android-sdk:0": {
+                    "version": "33",
+                          "buildToolsVersion": "33.0.1",
+                                "platformTools": true,
+                                      "cmdlineTools": true
+                                          }
+                                            },
+
+                                              "forwardPorts": [8080],
+
+                                                "postCreateCommand": "yes | sdkmanager --licenses && sdkmanager 'platforms;android-33'",
+
+                                                  "remoteUser": "vscode"
+                                                  }
